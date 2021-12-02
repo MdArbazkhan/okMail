@@ -1,9 +1,9 @@
-## okMail
+## [okMail](https://okmail.cloud)
 # Get your form response directly to your email inbox
 ####  Use your own front-end code. Submit to our API. Set a custom thank you page. 
 
 ```
-<form action="http://okmail.cloud/mail/{your_email}/{url_to_custom_thank_you_page}" method="GET">
+<form action="http://api.okmail.cloud/mail/{your_email}/{url_to_custom_thank_you_page}" method="GET">
   <label for="email">Your Email</label>
   <input name="Customer email" id="email" type="email">
 	<label for="name">Your Name</label>
@@ -19,9 +19,9 @@
 #### 3. If all good, Now enjoy serverless!! 
 ## API End Point Example
 #### 1. API End point with *default* thank you page
-`http://okmail.cloud/mail/customer@frozenspoon.com/NaN`
+`http://api.okmail.cloud/mail/customer@frozenspoon.com/NaN`
 #### 2. API End point with *custom* thank you page
-`http://okmail.cloud/mail/customer@frozenspoon.com/https://frozenspoon.com/thankyou`
+`http://api.okmail.cloud/mail/customer@frozenspoon.com/https://frozenspoon.com/thankyou`
 
 ## Contact Us
 Reach out to me via email @ `arbazkhan2772@gmail.com`
