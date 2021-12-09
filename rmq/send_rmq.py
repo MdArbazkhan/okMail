@@ -1,9 +1,9 @@
 import pika
-
+import os
 
 def publish_to_queue(queue_name, rmq_url, message_body, rmq_exchange):
     # Access the CLODUAMQP_URL environment variable and parse it (fallback to localhost)
-    url = 'amqps://fqhfvihc:sw82SbsPeZ3Qq35qRztGQeFRK0xSmELE@puffin.rmq2.cloudamqp.com/fqhfvihc'
+    url = os.getenv('rmq_url')
     params = pika.URLParameters(url)
     connection = pika.BlockingConnection(params)
     channel = connection.channel() # start a channel
